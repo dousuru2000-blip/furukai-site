@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>古着買取サイト｜あなたの古着、次の誰かの宝物に。</title>
+  <style>
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #faf8f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.2rem;
+      color: #7a5c3d;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      background: url("hero.jpg") center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      color: #fff;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 90%;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background-color: #e08b53;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #c96f35;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+
+    .step {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      width: 30%;
+      min-width: 260px;
+      margin-bottom: 1.5rem;
+      padding: 2rem 1rem;
+    }
+
+    .step h3 {
+      color: #7a5c3d;
+    }
+
+    footer {
+      background-color: #f2ede9;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .steps {
+        flex-direction: column;
+        align-items: center;
+      }
+      .step {
+        width: 80%;
+      }
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FURUKAI（古着買取）</h1>
+    <nav>
+      <a href="#">買取の流れ</a>
+      <a href="#">よくある質問</a>
+      <a href="#">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>あなたの古着、次の誰かの宝物に。</h2>
+      <p>査定無料・簡単3ステップで買取完了！</p>
+      <a href="#" class="cta-button">今すぐ買取依頼する</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>簡単3ステップで完了！</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>① 申し込み</h3>
+        <p>スマホやPCからフォーム入力するだけ。</p>
+      </div>
+      <div class="step">
+        <h3>② 発送</h3>
+        <p>無料キットでカンタン発送。送料も無料！</p>
+      </div>
+      <div class="step">
+        <h3>③ 査定・入金</h3>
+        <p>査定結果にご納得いただけたらすぐお振込み。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 FURUKAI. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
